@@ -6,7 +6,7 @@ await build({
   entryPoints: [{
     kind: "bin",
     name: ".",
-    path: "create-deno-module-project.exe",
+    path: "cli.ts",
   }],
   outDir: "./build",
   shims: {
