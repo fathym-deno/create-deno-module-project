@@ -7,6 +7,7 @@ await new Command()
   .action((options, ...args) => {
     console.log(options);
     console.log(args);
+
     console.log("Hello world");
   })
   .parse(Deno.args);
