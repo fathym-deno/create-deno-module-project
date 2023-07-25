@@ -1,0 +1,33 @@
+{
+  "tasks": {
+    "build": "deno task build:fmt && deno task build:lint && deno task test",
+    "build:fmt": "deno fmt",
+    "build:lint": "deno lint",
+    "deploy": "deno task build && ftm git",
+    "npm:build": "deno run -A scripts/npm.build.ts",
+    "npm:publish": "npm publish ./build --access public",
+    "test": "deno test -A ./tests/tests.ts --coverage=cov"
+  },
+  "imports": {
+    "$cliffy": "https://deno.land/x/cliffy@v1.0.0-rc.2/command/mod.ts",
+    "$dnt": "https://deno.land/x/dnt/mod.ts"
+  },
+  "lock": false,
+  "fmt": {
+    "files": {
+      "include": [],
+      "exclude": []
+    },
+    "options": {}
+  },
+  "lint": {
+    "files": {
+      "include": [],
+      "exclude": []
+    },
+    "rules": {
+      "include": [],
+      "exclude": []
+    }
+  }
+}

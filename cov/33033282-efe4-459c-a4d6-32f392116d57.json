@@ -1,0 +1,11 @@
+{
+  "scriptId": "5",
+  "url": "ext:core/01_core.js",
+  "functions": [
+    {
+      "functionName": "eventLoopTick",
+      "ranges": [{ "startOffset": 4614, "endOffset": 5723, "count": 2 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

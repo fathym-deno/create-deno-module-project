@@ -1,0 +1,16 @@
+{
+  "scriptId": "291",
+  "url": "ext:cli/runtime/js/99_main.js",
+  "functions": [
+    {
+      "functionName": "promiseRejectMacrotaskCallback",
+      "ranges": [{ "startOffset": 10626, "endOffset": 12426, "count": 2 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "errorEventCb",
+      "ranges": [{ "startOffset": 11423, "endOffset": 11543, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}
