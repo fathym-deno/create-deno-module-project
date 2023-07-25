@@ -1,5 +1,18 @@
 import { Command } from "https://deno.land/x/cliffy@v1.0.0-rc.2/command/mod.ts";
-import { exists } from "$std/fs/mod.ts";
+
+async function exists(path: string): Promise<boolean> {
+  try {
+    await Deno.stat(path);
+
+    return true;
+  } catch (error) {
+    if (error instanceof Deno.errors.NotFound) {
+      return false;
+    } else {
+      throw error;
+    }
+  }
+}
 
 async function ensureDenoJson(): Promise<void> {
   if (!(await exists("./deno.json"))) {
@@ -54,6 +67,7 @@ await new Command()
   .name("create-deno-module-project")
   .version("0.0.0")
   .description("Command line framework for Deno")
+  .arguments("<name:string>")
   .action(async (options, ...args) => {
     // const { name } = args;
     console.log(args);
