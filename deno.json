@@ -10,7 +10,8 @@
     "test": "deno test -A ./tests/tests.ts --coverage=cov"
   },
   "imports": {
-    "$dnt": "https://deno.land/x/dnt/mod.ts"
+    "$dnt": "https://deno.land/x/dnt/mod.ts",
+    "$std/": "https://deno.land/std@0.195.0/"
   },
   "lock": false,
   "fmt": {

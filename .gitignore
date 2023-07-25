@@ -5,3 +5,4 @@ coverage/
 lcov/
 target/
 tailwind.config.js
+test/
