@@ -4,10 +4,20 @@ await new Command()
   .name("create-deno-module-project")
   .version("0.0.0")
   .description("Command line framework for Deno")
-  .action((options, ...args) => {
+  .action(async (options, ...args) => {
+    const command = new Deno.Command(Deno.execPath(), {
+      args: [
+        "eval",
+        "console.log('hello'); console.error('world')",
+      ],
+    });
+
+    const { code, stdout, stderr } = await command.output();
+
     console.log(options);
     console.log(args);
-
-    console.log("Hello world");
+    console.assert(code === 0);
+    console.assert("world\n" === new TextDecoder().decode(stderr));
+    console.log(new TextDecoder().decode(stdout));
   })
   .parse(Deno.args);
