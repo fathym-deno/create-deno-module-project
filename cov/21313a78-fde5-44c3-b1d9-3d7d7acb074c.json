@@ -1,0 +1,39 @@
+{
+  "scriptId": "14",
+  "url": "ext:deno_web/02_event.js",
+  "functions": [
+    {
+      "functionName": "setTarget",
+      "ranges": [{ "startOffset": 2307, "endOffset": 2380, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "Event",
+      "ranges": [
+        { "startOffset": 3607, "endOffset": 5283, "count": 3 },
+        { "startOffset": 4763, "endOffset": 5279, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "get type",
+      "ranges": [{ "startOffset": 5517, "endOffset": 5568, "count": 6 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "get NONE",
+      "ranges": [{ "startOffset": 8690, "endOffset": 8720, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "dispatchEvent",
+      "ranges": [
+        { "startOffset": 24893, "endOffset": 26218, "count": 3 },
+        { "startOffset": 25693, "endOffset": 25716, "count": 1 },
+        { "startOffset": 25718, "endOffset": 25789, "count": 1 },
+        { "startOffset": 25940, "endOffset": 26217, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

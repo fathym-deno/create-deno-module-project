@@ -1,0 +1,39 @@
+{
+  "scriptId": "7",
+  "url": "ext:deno_webidl/00_webidl.js",
+  "functions": [
+    {
+      "functionName": "type",
+      "ranges": [{ "startOffset": 2339, "endOffset": 3090, "count": 3 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "converters.boolean",
+      "ranges": [{ "startOffset": 7743, "endOffset": 7777, "count": 1 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "converters.DOMString",
+      "ranges": [{ "startOffset": 9482, "endOffset": 9845, "count": 3 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "requiredArguments",
+      "ranges": [
+        { "startOffset": 17062, "endOffset": 17333, "count": 6 },
+        { "startOffset": 17142, "endOffset": 17331, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 18744, "endOffset": 20242, "count": 3 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "assertBranded",
+      "ranges": [{ "startOffset": 24891, "endOffset": 25074, "count": 3 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

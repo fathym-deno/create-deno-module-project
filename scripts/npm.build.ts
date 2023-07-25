@@ -15,16 +15,16 @@ await build({
   },
   package: {
     // package.json properties
-    name: "@fathym-deno/create-deno-module-project",
+    name: "@fathym/create-deno-module-project",
     version: Deno.args[0],
     description: "Used to scaffold a new deno module project.",
     license: "MIT",
     repository: {
       type: "git",
-      url: "git+https://github.com/fathym-deno/create-deno-module-project.git",
+      url: "git+https://github.com/fathym/create-deno-module-project.git",
     },
     bugs: {
-      url: "https://github.com/fathym-deno/create-deno-module-project/issues",
+      url: "https://github.com/fathym/create-deno-module-project/issues",
     },
   },
   postBuild() {

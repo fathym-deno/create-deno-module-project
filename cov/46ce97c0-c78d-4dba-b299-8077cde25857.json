@@ -1,0 +1,11 @@
+{
+  "scriptId": "294",
+  "url": "file:///C:/Users/micha_8ygdgy8/Fathym/OpenSource/fathym/create-deno-module-project/tests/cli.tests.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 118, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}
