@@ -3,7 +3,10 @@ import { exists } from "$std/fs/mod.ts";
 
 async function ensureDenoJson(): Promise<void> {
   if (!(await exists("./deno.json"))) {
-    await Deno.writeTextFileSync("./deno.json", JSON.stringify(defaultDenoJson(), null, 2));
+    await Deno.writeTextFileSync(
+      "./deno.json",
+      JSON.stringify(defaultDenoJson(), null, 2),
+    );
   }
 }
 
@@ -16,34 +19,34 @@ function defaultDenoJson() {
       "deploy": "deno task build && ftm git",
       "npm:build": "deno run -A scripts/npm.build.ts",
       "npm:publish": "npm publish ./build --access public",
-      "test": "deno test -A ./tests/tests.ts --coverage=cov"
+      "test": "deno test -A ./tests/tests.ts --coverage=cov",
     },
     "imports": {
       "$dnt": "https://deno.land/x/dnt/mod.ts",
-      "$std/": "https://deno.land/std@0.193.0/"
+      "$std/": "https://deno.land/std@0.193.0/",
     },
     "compilerOptions": {
       "jsx": "react-jsx",
-      "jsxImportSource": "preact"
+      "jsxImportSource": "preact",
     },
     "lock": false,
     "fmt": {
       "files": {
         "include": [],
-        "exclude": []
+        "exclude": [],
       },
-      "options": {}
+      "options": {},
     },
     "lint": {
       "files": {
         "include": [],
-        "exclude": []
+        "exclude": [],
       },
       "rules": {
         "include": [],
-        "exclude": []
-      }
-    }
+        "exclude": [],
+      },
+    },
   };
 }
 
@@ -53,6 +56,8 @@ await new Command()
   .description("Command line framework for Deno")
   .action(async (options, ...args) => {
     // const { name } = args;
+    console.log(args);
+    console.log(options);
 
     await ensureDenoJson();
   })
