@@ -3,8 +3,9 @@
     "build": "deno task build:fmt && deno task build:lint && deno task test",
     "build:fmt": "deno fmt",
     "build:lint": "deno lint",
+    "compile": "deno compile --output=build/create-deno-module-project.exe cli.ts",
     "deploy": "deno task build && ftm git",
-    "npm:build": "deno run -A scripts/npm.build.ts",
+    "npm:build": "deno task compile && deno run -A scripts/npm.build.ts",
     "npm:publish": "npm publish ./build --access public",
     "test": "deno test -A ./tests/tests.ts --coverage=cov"
   },
