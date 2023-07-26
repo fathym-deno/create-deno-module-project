@@ -16,11 +16,6 @@ await new Command()
       directory = Deno.execPath();
     }
 
-    // console.log(parseFlags(args));
-
-    console.log(name);
-    console.log(directory);
-
     await Deno.mkdir(directory, { recursive: true });
     await Deno.mkdir(join(directory, ".vscode"), { recursive: true });
     await Deno.mkdir(join(directory, "scripts"), { recursive: true });
