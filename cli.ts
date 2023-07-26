@@ -128,7 +128,7 @@ async function ensureModRoot(directory: string): Promise<void> {
 }
 
 function defaultModRoot() {
-  return `export * from "./src/utils.ts"`;
+  return `export * from "./src/utils.ts";`;
 }
 
 async function ensureSrcUtils(directory: string): Promise<void> {
