@@ -1,5 +1,5 @@
 import { Command } from "$cliffy";
-import { join } from "$std/path/mod.ts";
+import { join } from "$std/path";
 
 await new Command()
   .name("create-deno-module-project")
