@@ -10,10 +10,10 @@
     "test": "deno test -A ./tests/tests.ts --coverage=cov"
   },
   "imports": {
-    "$cliffy": "https://deno.land/x/cliffy@v1.0.0-rc.2/command/mod.ts",
+    "@cliffy": "https://deno.land/x/cliffy@v1.0.0-rc.2/command/mod.ts",
     "$dnt": "https://deno.land/x/dnt/mod.ts",
     "$std/": "https://deno.land/std@0.195.0/",
-    "$std/path": "https://deno.land/std@0.195.0/path/mod.ts"
+    "@std/path": "https://deno.land/std@0.195.0/path/mod.ts"
   },
   "lock": false,
   "fmt": {

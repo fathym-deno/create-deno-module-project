@@ -1,4 +1,4 @@
-import { Command } from "$cliffy";
+import { Command } from "@cliffy";
 import { join } from "https://deno.land/std@0.195.0/path/mod.ts";
 
 await new Command()
