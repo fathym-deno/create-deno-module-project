@@ -79,17 +79,13 @@ function defaultDenoJson() {
     },
     "lock": false,
     "fmt": {
-      "files": {
-        "include": [],
-        "exclude": [],
-      },
+      "include": ["./**/*.ts", "./**/*.tsx"],
+      "exclude": [],
       "options": {},
     },
     "lint": {
-      "files": {
-        "include": [],
-        "exclude": [],
-      },
+      "include": ["./**/*.ts", "./**/*.tsx"],
+      "exclude": [],
       "rules": {
         "include": [],
         "exclude": [],
